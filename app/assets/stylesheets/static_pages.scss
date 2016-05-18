@@ -1,3 +1,30 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+html,
+body { height: 100%; }
+
+body {
+  display: table;
+  width: 100%;
+}
+
+header h1, main p {
+	text-align: center;
+}
+
+.flowerbike {
+	height: 300px;
+	margin: 0 auto;
+}
+
+.page-row {
+  display: table-row;
+  height: 1px;
+}
+
+
+.page-row-expanded { height: 100%; }
+

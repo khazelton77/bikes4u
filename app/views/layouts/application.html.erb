@@ -66,8 +66,18 @@
 </nav>
 <%= yield %>
 
-<footer>
-	&copy; 2015 Bike Berlin
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-6 col-md-12">
+ <%= image_tag("flowersbike.jpeg", class: "img-responsive flowerbike", alt: "Flowers and bike") %>
+    </div>
+  </div>
+ </div>
+
+
+
+<footer class="page-row">
+  <p>&copy; 2016 Bikes4U</p>
 </footer>
 </body>
 </html>
