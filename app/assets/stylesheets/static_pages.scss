@@ -9,13 +9,15 @@ body { height: 100%; }
 body {
   display: table;
   width: 100%;
-  background-image: url("/assets/nolabike.jpg");
+  background-image: url("/assets/vintagebackground.jpg");
   background-size: cover;
 }
 
+
+
 #contactinfo {
 	text-align: center;
-	color: white
+	color: black;
 
 }
 
@@ -30,7 +32,7 @@ body {
 
 .page-row h1, p {
 	text-align: center;
-	color: white;
+	color: black;
 }
 
 .page-row-expanded { height: 100%; }
