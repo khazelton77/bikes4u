@@ -9,12 +9,18 @@ body { height: 100%; }
 body {
   display: table;
   width: 100%;
+  background-image: url("/assets/nolabike.jpg");
+  background-size: cover;
 }
 
+#contactinfo {
+	text-align: center;
+	color: white
 
-.flowerbike {
-	height: 300px;
-	margin: 0 auto;
+}
+
+#contactinfo ul li {
+	list-style-type: none;
 }
 
 .page-row {
@@ -22,6 +28,10 @@ body {
   height: 1px;
 }
 
+.page-row h1, p {
+	text-align: center;
+	color: white;
+}
 
 .page-row-expanded { height: 100%; }
 
