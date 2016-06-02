@@ -14,12 +14,13 @@ body {
 }
 
 
-
 #contactinfo {
 	text-align: center;
 	color: black;
+  margin: 0 auto;
 
 }
+
 
 #contactinfo ul li {
 	list-style-type: none;
@@ -36,6 +37,11 @@ body {
 }
 
 .page-row-expanded { height: 100%; }
+
+
+.name {
+  padding-top: 30px;
+}
 
 #thank-you {
   font-weight: bolder;
