@@ -18,3 +18,8 @@
 	width: 800px;
 	margin: 0 auto;
 }
+
+#navsearch {
+	float: right;
+	padding-top: 10px;
+}
