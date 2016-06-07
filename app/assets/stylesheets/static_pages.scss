@@ -21,8 +21,8 @@ body {
 
 
 #contactinfo {
-	text-align: center;
-	color: black;
+  text-align: center;
+  color: black;
   margin: 0 auto;
 
 }
@@ -31,6 +31,7 @@ body {
 #contactinfo ul li {
 	list-style-type: none;
 }
+
 
 .page-row {
   display: table-row;
@@ -61,4 +62,12 @@ body {
   box-shadow: 4px 18px 88px 12px rgba(0,0,0,0.75);
 
 
+}
+
+
+
+#contact-form {
+
+  margin: 0 auto;
+  padding-left: 25%;
 }
