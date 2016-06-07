@@ -4,7 +4,10 @@
 
 #listprod {
 	text-align: center;
-	color: black;
+	color: #333333;
+	font-weight: 700;
+	text-shadow: 2px 2px #99e699;
+
 }
 
 #new-product {
@@ -12,5 +15,16 @@
 }
 
 .prodlist h1, p{
-	color: black;
+	color: #333333;
+	text-align: center;
 }
+
+.prodlist {
+	color: #333333;
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+	padding: 5em 0 5em 5em;
+}
+
+

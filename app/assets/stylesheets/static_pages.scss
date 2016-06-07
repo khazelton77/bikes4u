@@ -10,11 +10,14 @@ body { height: 100%; }
 body {
   display: table;
   width: 100%;
-  background-image: url("/assets/bikebg.jpg");
+  background-color: beige;
   background-position: center;
   background-size: cover;
 }
 
+#about h1 {
+  text-align: center;
+}
 
 
 #contactinfo {
