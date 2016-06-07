@@ -6,12 +6,15 @@
 html,
 body { height: 100%; }
 
+
 body {
   display: table;
   width: 100%;
-  background-image: url("/assets/vintagebackground.jpg");
+  background-image: url("/assets/bikebg.jpg");
+  background-position: center;
   background-size: cover;
 }
+
 
 
 #contactinfo {
