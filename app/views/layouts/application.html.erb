@@ -8,13 +8,14 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= csrf_meta_tags %>
+  <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-brand navbar-header">
-    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    <button type="button" id="navigate" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -26,17 +27,16 @@
     <!--Collect the nav links, forms, and other content for toggling  -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><%= link_to "Home", static_pages_index_path(@index) %></li>
+        <li class="active"><%= link_to "Home", static_pages_landing_page_path(@landing_page) %></li>
         <li><%= link_to "About",  static_pages_about_path(@about) %></li>
         <li><%= link_to "Contact", static_pages_contact_path(@contact) %></li>
-        <li><%= link_to "Users", users_path(@users) %> </li>
+        <li><%= link_to "Users", users_path(@users) %>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><%= link_to "Bikes", products_path %> </li>
             <li><%= link_to "Order", orders_path(@orders) %></li>
             <li role="separator" class="divider"></li>
-            <li><%= link_to "Fix it Yourself", "https://www.bikeparts.com/" %></li>
             <li role="separator" class="divider"></li>
             <li><%= link_to "Places to Visit", "http://www.slowtravelberlin.com/cycling-the-city/" %></li>
           </ul>
