@@ -13,6 +13,7 @@
     <strong>Image url:</strong>
     <%= @product.image_url %>
   </p>
+
   <p>
 	   <strong>Color:</strong>
 	   <%= @product.color %>
@@ -21,27 +22,11 @@
 	   <strong>Price:</strong>
 	   <%= @product.price %>
   </p>
+  <p>
+    <%= new_comment %>
+  </p>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
 
-<<<<<<< HEAD
-<%if signed_in? %>
-  <h4>Add a review:</h4>
-  <%= form_for([@product, @product.comments.build]) do |f| %>
-    <p>
-      <%= f.label :body, "Comments" %><br>
-      <%= f.text_area :body %>
-    </p>
-    <p>
-      <%= f.label :rating %><br>
-      <%= f.text_field :rating, class: "rating" %>
-    </p>
-    <p>
-      <%= f.submit "Submit" %>
-    </p>
-  <% end %>
-<% end %>
-=======
 
->>>>>>> master
