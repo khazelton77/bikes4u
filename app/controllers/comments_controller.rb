@@ -14,11 +14,13 @@ class CommentsController < ApplicationController
 		end
 	end
 
-	def index 
-		@comments = Comment.paginate(:page => params[:page])
-	end
+	
 
 	def destroy
+		@comment = Comment.find(params[:id])
+		product = @comment.product
+		@comment.destroy
+		redirect_to product
 	end
 
 
