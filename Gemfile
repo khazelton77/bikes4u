@@ -53,4 +53,5 @@ group :production do
 end
 gem 'devise'
 gem 'cancancan'
-
+## Gemfile for Rails 3+, Sinatra, and Merb
+gem 'will_paginate', '~> 3.1.0'
