@@ -14,6 +14,7 @@ Rails.application.routes.draw do
 
   post 'static_pages/thank_you'
 
+  post 'new_user/create'
 
   resources :orders, only: [:index, :show, :create, :destroy]
 
