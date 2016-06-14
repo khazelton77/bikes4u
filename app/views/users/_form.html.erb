@@ -1,33 +1,45 @@
+
 <%= form_for(@user) do |f| %>
-  <% if @user.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+<% if @user.errors.any? %>
+<div id="error_explanation">
+  <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+</div>
 
-      <ul>
-      <% @user.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
+<ul>
+  <% @user.errors.full_messages.each do |message| %>
+    <li><%= message %></li>
   <% end %>
-
-  <div class="field">
+</ul>
+<% end %>
+<div id="centerdiv" class="container-fluid">
+  <div class="row row-centered">
+    <div class="field col-xs-6 col-md-6">
     <%= f.label :first_name %><br>
     <%= f.text_field :first_name %>
   </div>
-  <div class="field">
+</div>
+<div class="row row-centered">
+  <div class="field col-xs-6 col-md-6"> 
     <%= f.label :last_name %><br>
     <%= f.text_field :last_name %>
   </div>
-  <div class="field">
+</div>
+<div class="row row-centered">
+  <div class="field col-xs-6 col-md-6">    
     <%= f.label :email %><br>
     <%= f.email_field :email %>
   </div>
-  <div class="field">
-    <%= f.label :password %><br>
-    <%= f.password_field :password %>
+</div>
+<div class="row row-centered">
+<div class="field col-xs-6 col-md-6">   
+  <%= f.label :password %><br>
+  <%= f.password_field :password %>
   </div>
-  <div class="actions">
+</div>
+<div class="row row-centered">
+  <div class="field col-xs-6 col-md-6"> 
     <%= f.submit %>
   </div>
 <% end %>
+</div>
+</div>
