@@ -35,5 +35,19 @@ nav {
 	padding-top: 10px;
 }
 
+#loginhead {
+	text-align: center;
+}
 
+#loginform {
+	border: 2px solid black;
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	width: 30%;
+	margin: 0 auto;
+}
 
+#signpass {
+	text-align: center;
+}
