@@ -14,7 +14,10 @@ describe UsersController, :type => :controller do
 
   end
 
-  let(:user) { User.create!(email: "chaotic177@hotmail.com", password: "123456")}
+  let(:user) { @user = FactoryGirl.create(:user)
+}
+
+
 
   describe "GET #show" do
     context "User is logged in" do
