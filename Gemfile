@@ -37,6 +37,7 @@ group :development, :test do
   gem 'byebug'
   gem 'sqlite3'
   gem 'rspec-rails', '~> 3.4'
+  gem 'factory_girl_rails', '~>4.0'
 end
 
 group :development do
@@ -44,7 +45,7 @@ group :development do
   gem 'web-console', '~> 2.0'
 end
 
-group :production do 
+group :production do
 	gem 'rails_12factor'
 	gem 'pg'
 end
