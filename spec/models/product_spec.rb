@@ -5,19 +5,19 @@ describe Product do
 end
 
 	before do
-		@product = Product.create!(name: "race bike", description: "fast bike", image_url: "assets/citybike.jpeg", color: "purple", price: "100")
+		@product = FactoryGirl.create(:product)
 	end
 
 	before do
-		@user = User.create!(email: "jimmy@buffett.com", password: "123456")
-	end 
-		
+		@user = FactoryGirl.create(:user)
+	end
+
 	before do
-		@product.comments.create!(rating: 1, user: @user, body: "The most awful bike ever!")
+		@product.comments.create!(rating: 1, user: @user, body: "TERRIBLE!")
 		@product.comments.create!(rating: 3, user: @user, body: "Good, not great.")
 		@product.comments.create!(rating: 5, user: @user, body: "NICE BIKE!")
-	end 
- 
+	end
+
 
 	it "returns the average rating of all comments" do
 		expect(@product.comments.average(:rating)).to eq 3
@@ -27,8 +27,7 @@ end
 		end
 
 		before do
-			Product.new(description: "Nice bike")
-		end
+			Product.new(description: "Nice bike")		end
 
 	it "product is invalid" do
 		expect(Product.new).not_to be_valid
