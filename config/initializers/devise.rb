@@ -179,7 +179,7 @@ Devise.setup do |config|
   # Number of authentication tries before locking an account if lock_strategy
   # is failed attempts.
   # config.maximum_attempts = 20
-
+  config.secret_key = '8cdd970adbdcedcc8de70adb65a7f4f3345baaa6d91432c0699a8a1b6d6e052d25da01d56edb3706e11aba52861f77121e2908b31f60af6221471be7d3142e57'
   # Time interval to unlock the account if :time is enabled as unlock_strategy.
   # config.unlock_in = 1.hour
 
