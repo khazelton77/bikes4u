@@ -27,7 +27,7 @@ end
 		end
 
 		before do
-			Product.new(description: "Nice bike")		end
+			Product.new(description: "Nice bike")		
 
 	it "product is invalid" do
 		expect(Product.new).not_to be_valid
