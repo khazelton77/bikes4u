@@ -5,7 +5,7 @@ class PaymentsController < ApplicationController
     token = params[:stripeToken]
     begin
       charge = Stripe::Charge.create(
-      :amount => <%= @product.price %>,
+      :amount => @product.price,
       :currency => "usd",
       :source => token,
       :description => params[:stripeEmail]
