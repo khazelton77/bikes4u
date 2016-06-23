@@ -12,6 +12,9 @@ class OrdersController < ApplicationController
 	end
 
 	def create
+		@product_id = Product.id
+		@user_id = User(current_user)
+		@total = Product.price
 	end
 
 	def destroy

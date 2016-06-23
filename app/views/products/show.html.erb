@@ -53,6 +53,7 @@
     <div class="col-xs-6 col-md-6 col-centered">
       <%= form_tag "/payments/create" do %>
         <%= render partial: "shared/stripe_checkout_button" %>
+        <%= hidden_field_tag(:product_id, @product.id) %>
       <% end %>
 
 </div><!--/row-->
