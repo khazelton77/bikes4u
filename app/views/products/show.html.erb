@@ -3,7 +3,7 @@
 <div class="container-fluid">
   <div class="row row-centered">
     <div class="col-xs-6 col-md-6 col-centered">
-      <%= image_tag("#{@product.image_url}", class: "img-thumbnail") %>
+      <%= image_tag("#{@product.image_url}", class: "img-thumbnail img-zoom", data_zoom_image: "#{@product.image_url}") %>
     </div><!--/col-->
     <div class="col-xs-6 col-md-6 col-centered">
       <p>
