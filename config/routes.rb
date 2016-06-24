@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout'}, :controllers => { :registrations => "user_registrations" }
-  resources :products do 
+  resources :products do
     resources :comments
   end
   resources :users
@@ -15,6 +15,8 @@ Rails.application.routes.draw do
   post 'static_pages/thank_you'
 
   post 'new_user/sign_up'
+
+
 
   resources :orders, only: [:index, :show, :create, :destroy]
 
@@ -47,7 +49,7 @@ Rails.application.routes.draw do
   #   end
 
   # Example resource route with sub-resources:
-    
+
   # Example resource route with more complex sub-resources:
   #   resources :products do
   #     resources :comments
