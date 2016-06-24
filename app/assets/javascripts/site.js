@@ -8,5 +8,5 @@ $(document).on('ready page:load', function() {
 	});
 
 $('.img-zoom').elevateZoom();
-
+console.log("Hello World!");
 });
