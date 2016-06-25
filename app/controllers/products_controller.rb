@@ -3,6 +3,7 @@ class ProductsController < ApplicationController
 
   # GET /products
   # GET /products.json
+  respond_to :json, :html
   def index
    if params[:q]
     search_term = params[:q]
@@ -10,12 +11,13 @@ class ProductsController < ApplicationController
   else
     @products = Product.all
     end
+    respond_with @products
   end
 
   # GET /products/1
   # GET /products/1.json
   def show
-    
+
     @comments = @product.comments.order("created_at DESC")
     @comments = Comment.paginate(:page => params[:page])
 
