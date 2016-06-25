@@ -14,7 +14,7 @@ $(document).on('ready page:load', function(){
   angular.bootstrap(document.body, ['shop'])
 });
 
-app.controller('OrdersCtrl', ['$scope', 'models' function($scope, models){
+app.controller('OrdersCtrl', ['$scope', 'models', function($scope, models){
   $scope.orders = models.orders.query();
   $scope.products = models.products.query();
   $scope.addOrder = function(){
