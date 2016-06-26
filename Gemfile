@@ -30,6 +30,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 #Stripe Payment System
 gem 'stripe'
 
+# Memcachier
+gem 'dalli'
 # Use Unicorn as the app server
 # gem 'unicorn'
 
