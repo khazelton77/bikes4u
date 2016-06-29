@@ -1,13 +1,13 @@
 <p id="notice"><%= notice %></p>
 
 <h1 id="listprod">Listing Products</h1>
-
-  <% cache @product do %>
+<div id="productindex">
     <% @products.each do |product| %>
      <%= render product %>
-    <% end %>
+
   <% end %>
 
 <div id="new-product">
   <p><%= link_to 'New Product', new_product_path %></p>
+</div>
 </div>

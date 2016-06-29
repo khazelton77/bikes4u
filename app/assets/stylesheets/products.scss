@@ -1,7 +1,7 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
+@import "bootstrap";
 
 #listprod {
 	text-align: center;
@@ -10,7 +10,11 @@
 	text-shadow: 2px 2px #99e699;
 
 }
-
+ #productindex {
+	 display: flex;
+	 flex-direction: column;
+	 align-content: center;
+ }
 
 #new-product {
 	text-align: center;
@@ -34,6 +38,12 @@
 
 #pic-ind {
 	border: 3px solid green;
+}
+
+#prodshow {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
 }
 
 .prodlist {
