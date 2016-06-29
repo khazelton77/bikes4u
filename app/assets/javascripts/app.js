@@ -17,15 +17,20 @@ $(document).on('ready page:load', function(){
 app.controller('OrdersCtrl', ['$scope', 'models', function($scope, models){
   $scope.orders = models.orders.query();
   $scope.products = models.products.query();
+
+  // Creates a new Order
   $scope.addOrder = function(){
     if(!$scope.newOrder.product_id || $scope.newOrder.total === '') { return; }
+
     order = models.orders.save($scope.newOrder, function(){
       recent_order = models.orders.get({id: order.id});
       $scope.orders.push(recent_order);
       $scope.newOrder = '';
     });
-    $scope.orders.push($scope.newOrder);
+    // The order is already being stored on line 25, this is not needed $scope.orders.push($scope.newOrder);
   }
+
+  // Deletes and Existing Order
   $scope.deleteOrder = function(order){
     models.orders.delete(order);
     $scope.orders.splice($scope.orders.indexOf(order), 1);
