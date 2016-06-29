@@ -16,8 +16,9 @@ Rails.application.routes.draw do
 
   post 'new_user/sign_up'
 
+  post 'payments/create'
 
-
+  resources :charges
   resources :orders, only: [:index, :show, :create, :destroy]
 
 

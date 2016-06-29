@@ -23,7 +23,16 @@ nav {
 	font-family: 'Oxygen', sans-serif;
 	font-weight: 400;
 	color: black;
+	padding: 1.5em;
 }
+nav a:hover {
+	text-decoration: none;
+}
+
+#navigate {
+	margin-top: -0.5em;
+	margin-left: 1em;
+	}
 
 #page-wrap {
 	width: 100%;
@@ -33,6 +42,7 @@ nav {
 #navsearch {
 	float: right;
 	padding-top: 10px;
+	color: grey;
 }
 
 #loginhead {
