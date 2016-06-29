@@ -14,9 +14,22 @@ body {
   background-position: center;
   background-size: cover;
 }
-
+#about {
+  background-image: url("/assets/nola-night.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 20em;
+}
 #about h1 {
+  margin-top: -5em;
   text-align: center;
+  color: white;
+  font-size: 2.5em;
+}
+
+#about p {
+  font-size: 1.5em;
+  color: white;
 }
 
 
@@ -63,7 +76,6 @@ body {
 
 
 }
-
 
 
 #contact-form {
