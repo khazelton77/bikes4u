@@ -1,19 +1,21 @@
 
 <div ng-controller="OrdersCtrl">
-  <h1>Orders</h1>
+  <div class="orders">
+    <h1 id="orderhead">Orders</h1>
 
-  <form class="form-inline" ng-submit="addOrder()">
-    <strong>Add order: </strong>
-    <select ng-model="newOrder.product_id" class="form-control">
-      <option value="" disabled selected>Select a product</option>
-      <option ng-repeat="product in products" value="{{product.id}}">{{product.name}}</option>
-    </select>
-    <input type="number" step="0.01" class="form-control" placeholder="Total" ng-model="newOrder.total">
-    <!-- This is not needed <input type="number" class="form-control" ng-model="newOrder.product_name"> -->
+    <form class="form-inline" ng-submit="addOrder()">
+      <strong>Add order: </strong>
+      <select ng-model="newOrder.product_id" class="form-control">
+        <option value="" disabled selected>Select a product</option>
+        <option ng-repeat="product in products" value="{{product.id}}">{{product.name}}</option>
+      </select>
+      <input type="number" step="0.01" class="form-control" placeholder="Total" ng-model="newOrder.total">
+      <!-- This is not needed <input type="number" class="form-control" ng-model="newOrder.product_name"> -->
 
-    <input type="submit" value="+" class="btn btn-success">
-  </form>
-  <table class="table table-hover table-striped table-responsive">
+      <input type="submit" value="+" class="btn btn-success">
+    </form>
+  </div>
+  <table class="orders table table-hover table-striped table-responsive">
     <thead>
       <td>Order ID</td>
       <td>Total</td>

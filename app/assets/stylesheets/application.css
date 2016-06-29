@@ -58,6 +58,14 @@ nav a:hover {
 	width: 10%;
 
 }
+#orderhead {
+	text-align: center;
+	padding-bottom: 1em;
+}
+.orders {
+	margin-left: 4em;
+	padding: 3em;
+}
 
 #signpass {
 	text-align: center;

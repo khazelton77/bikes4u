@@ -1,8 +1,10 @@
 <div id="contactinfo">
 	<div id="contact-form">
-	<div class="contacthead">
-		<h1>Contact Us</h1>
-	</div>
+		<div class="row contacthead">
+			<div class="col-sm-4 col-md-8">
+				<h1>Contact Us</h1>
+			</div>
+		</div>
 	<%= flash[:notice] %>
 
 	<%= form_tag("/static_pages/thank_you") do %>
@@ -17,12 +19,16 @@
 				<%= text_field_tag :email, nil, class: "form-control", placeholder: "Enter Email" %>
 			</div>
 				<div class="form-group message">
-					<%= label_tag :message, "Message" %> 
+					<%= label_tag :message, "Message" %>
 					<%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message" %>
 				</div>
 			</div>
 		</div>
+		<div class="row">
+			<div class="col-sm-4 col-md-8">
 		<%= submit_tag "Send" %>
+		</div>
+	</div>
 		<% end %>
 	</div>
 </div>
