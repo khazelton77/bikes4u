@@ -70,3 +70,13 @@ nav a:hover {
 #signpass {
 	text-align: center;
 }
+
+footer {
+	padding: 2em;
+}
+
+footer p {
+	text-align: left;
+	padding: 1.5em;
+	
+}
