@@ -33,30 +33,11 @@ body {
 }
 
 
-#contactinfo {
-  text-align: center;
-  color: black;
-  margin: 0 auto;
-
+#contact-page {
+  height: 100%;
+  border: 2px solid black;
+  margin: 0 15%;
 }
-
-
-#contactinfo ul li {
-	list-style-type: none;
-}
-
-
-.page-row {
-  display: table-row;
-  height: 1px;
-}
-
-.page-row h1, p {
-	text-align: center;
-	color: black;
-}
-
-.page-row-expanded { height: 100%; }
 
 
 .name {
@@ -82,4 +63,13 @@ body {
 
   margin: 0 auto;
   padding-left: 25%;
+
+}
+
+.panel-body {
+  padding: 5em;
+}
+
+.panel-heading h1 {
+  text-align: center;
 }

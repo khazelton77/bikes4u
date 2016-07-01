@@ -31,6 +31,8 @@ nav a:hover {
 	text-decoration: none;
 }
 
+
+
 #navigate {
 	margin-top: -0.5em;
 	margin-left: 1em;
@@ -73,10 +75,4 @@ nav a:hover {
 
 footer {
 	padding: 2em;
-}
-
-footer p {
-	text-align: left;
-	padding: 1.5em;
-	
 }
