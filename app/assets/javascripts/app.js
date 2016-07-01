@@ -27,7 +27,6 @@ app.controller('OrdersCtrl', ['$scope', 'models', function($scope, models){
       $scope.orders.push(recent_order);
       $scope.newOrder = '';
     });
-    // The order is already being stored on line 25, this is not needed $scope.orders.push($scope.newOrder);
   }
 
   // Deletes and Existing Order

@@ -2,7 +2,6 @@
 <div ng-controller="OrdersCtrl">
   <div class="orders">
     <h1 id="orderhead">Orders</h1>
-
     <form class="form-inline" ng-submit="addOrder()">
       <strong>Add order: </strong>
       <select ng-model="newOrder.product_id" class="form-control">
@@ -10,8 +9,6 @@
         <option ng-repeat="product in products" value="{{product.id}}">{{product.name}}</option>
       </select>
       <input type="number" step="0.01" class="form-control" placeholder="Total" ng-model="newOrder.total">
-      <!-- This is not needed <input type="number" class="form-control" ng-model="newOrder.product_name"> -->
-
       <input type="submit" value="+" class="btn btn-success">
     </form>
   </div>
@@ -20,24 +17,13 @@
       <td>Order ID</td>
       <td>Total</td>
       <td>Product</td>
-      <td>
-        Delete
-      </td>
+      <td>Delete</td>
     </thead>
     <tr ng-repeat="order in orders | orderBy:'-id':reverse">
-      <td>
-        {{order.id}}
-      </td>
-      <td>
-        <strong>{{order.total | currency}}</strong>
-      </td>
-      <td>
-        {{order.product_name}}
-        <small ng-show="order.user_id"><br>-{{order.user_email}}</small>
-      </td>
-      <td>
-        <button ng-click="deleteOrder(order)" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>
-      </td>
+      <td>{{order.id}}</td>
+      <td><strong>{{order.total | currency}}</strong></td>
+      <td>{{order.product_name}}<small ng-show="order.user_id"><br>{{order.user_email}}</small></td>
+      <td><button ng-click="deleteOrder(order)" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button></td>
     </tr>
   </table>
 </div>

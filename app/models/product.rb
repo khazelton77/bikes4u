@@ -1,5 +1,6 @@
 class Product < ActiveRecord::Base
 	has_many :comments
+	has_many :orders
 	validates :name, presence: true
 	validates :description, presence: true
 	validates :image_url, presence: true

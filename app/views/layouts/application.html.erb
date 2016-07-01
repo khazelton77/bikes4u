@@ -11,70 +11,64 @@
   <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-brand navbar-header">
-    <button type="button" id="navigate" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-brand navbar-header">
+      <button type="button" id="navigate" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-        <%= link_to "Bikes 4 U", static_pages_landing_page_path(:active => "static_pages_landing_page") %>
-    </div>
+      <%= link_to "Bikes 4 U", static_pages_landing_page_path(:active => "static_pages_landing_page") %>
+      </div>
 
-    <!--Collect the nav links, forms, and other content for toggling  -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-
-        <li><%= link_to "About",  static_pages_about_path(@about) %></li>
-         <li><%= link_to "Products", products_path %></li>
-        <li><%= link_to "Order", orders_path(@orders) %></li>
-        <li><%= link_to "Contact", static_pages_contact_path(@contact) %></li>
-        <li class="dropdown">
-        <!--  <a href="static_pages/users" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Users <span class="caret"></span></a>
-          <ul class="dropdown-menu">-->
-            <li><%= link_to "Members", users_path(@users) %> </li>
-            <li><%= link_to "Sign Up", new_user_path(@users_sign_up) %> </li>
-            <li role="separator" class="divider"></li>
-            <li role="separator" class="divider"></li>
-            <li><%= link_to "New Orleans Biker Info", "http://www.nola.gov/dpw/bicycling/" %></li>
-          </ul>
-        </li>
-      </ul>
-      <ul class="nav pull-right">
-        <li>
-          <% if user_signed_in? %>
-            <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
-          <% else %>
-            <%= link_to('Login', new_user_session_path) %>
-          <% end %>
-        </li>
-      </ul>
-      <div id="navsearch">
-        <%= form_tag("/products", method: "get") do %>
+      <!--Collect the nav links, forms, and other content for toggling  -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><%= link_to "About",  static_pages_about_path(@about) %></li>
+          <li><%= link_to "Products", products_path %></li>
+          <li><%= link_to "Order", orders_path(@orders) %></li>
+          <li><%= link_to "Contact", static_pages_contact_path(@contact) %></li>
+          <li class="dropdown">
+          <li><%= link_to "Members", users_path(@users) %> </li>
+          <li><%= link_to "Sign Up", new_user_path(@users_sign_up) %> </li>
+          <li role="separator" class="divider"></li>
+          <li role="separator" class="divider"></li>
+        </ul>
+        <ul class="nav pull-right">
+          <li>
+            <% if user_signed_in? %>
+              <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+            <% else %>
+              <%= link_to('Login', new_user_session_path) %>
+            <% end %>
+          </li>
+        </ul>
+        <div id="navsearch">
+          <%= form_tag("/products", method: "get") do %>
           <%= label_tag(:q, "Search:") %>
           <%= text_field_tag(:q) %>
           <%= submit_tag("Submit", class: "btn btn-primary") %>
-      <% end %>
-      </div>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav><% if notice %>
-  <p class="notice"><%= notice %></p>
-<% end %>
+        <% end %>
+        </div>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <% if notice %>
+    <p class="notice"><%= notice %></p>
+  <% end %>
 <% if alert %>
-  <p class="alert"><%= alert %></p>
-<% end %>
+    <p class="alert"><%= alert %></p>
+  <% end %>
 
-<div id="page-wrap">
+  <div id="page-wrap">
 
-<%= yield %>
-</div><!-- /page-wrap-->
-<footer>
-  <p>&copy; 2016 Bikes4U</p>
-
-</footer>
-</body>
+    <%= yield %>
+  </div><!-- /page-wrap-->
+  <footer>
+    <p>&copy; 2016 Bikes4U</p>
+  </footer>
+  </body>
 </html>
