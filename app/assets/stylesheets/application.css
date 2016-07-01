@@ -35,7 +35,7 @@ nav a:hover {
 
 #navigate {
 	margin-top: -0.5em;
-	margin-left: 1em;
+	margin-right: -26em;
 	}
 
 #page-wrap {
@@ -47,6 +47,7 @@ nav a:hover {
 	float: right;
 	padding-top: 10px;
 	color: grey;
+
 }
 
 #loginhead {
