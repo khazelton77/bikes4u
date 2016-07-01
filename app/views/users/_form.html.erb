@@ -11,35 +11,26 @@
   <% end %>
 </ul>
 <% end %>
-<div id="centerdiv" class="container-fluid">
-  <div class="row row-centered">
-    <div class="field col-xs-6 col-md-6">
+<div id="new-user">
+  <div class="panel panel-default">
     <%= f.label :first_name %><br>
     <%= f.text_field :first_name %>
   </div>
-</div>
-<div class="row row-centered">
-  <div class="field col-xs-6 col-md-6"> 
+  <div class="panel panel-default">
     <%= f.label :last_name %><br>
     <%= f.text_field :last_name %>
   </div>
-</div>
-<div class="row row-centered">
-  <div class="field col-xs-6 col-md-6">    
+  <div class="panel panel-default">
     <%= f.label :email %><br>
     <%= f.email_field :email %>
   </div>
-</div>
-<div class="row row-centered">
-<div class="field col-xs-6 col-md-6">   
-  <%= f.label :password %><br>
-  <%= f.password_field :password %>
+  <div class="panel panel-default">
+    <%= f.label :password %><br>
+    <%= f.password_field :password %>
+  </div>
+  <div class="buttonholder">
+    <%= button_tag "Submit", class: "btn btn-primary"%>
   </div>
 </div>
-<div class="row row-centered">
-  <div class="field col-xs-6 col-md-6"> 
-    <%= f.submit %>
-  </div>
+
 <% end %>
-</div>
-</div>

@@ -2,19 +2,34 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#userhead, #newuserhead {
+// #userhead, #newuserhead {
+// 	text-align: center;
+// }
+//
+// #centerdiv {
+// 	display: flex;
+// 	flex-direction: column;
+// 	justify-items: center;
+// 	width: 30%;
+// 	margin: 0 auto;
+// }
+//
+// #back {
+// 	text-align: center;
+// }
+//
+#new-user {
 	text-align: center;
+  margin: 0 25%;
+
 }
 
-#centerdiv {
-	display: flex;
-	flex-direction: column;
-	justify-items: center;
-	width: 30%;
-	margin: 0 auto;
+#newuserhead {
+	padding-bottom: 1em;
+  text-align: center;
 }
 
-#back {
+.buttonholder {
 	text-align: center;
-}
 
+}
