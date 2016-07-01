@@ -56,7 +56,7 @@
         <%= form_tag("/products", method: "get") do %>
           <%= label_tag(:q, "Search:") %>
           <%= text_field_tag(:q) %>
-          <%= submit_tag("Submit") %>
+          <%= submit_tag("Submit", class: "btn btn-primary") %>
       <% end %>
       </div>
     </div><!-- /.navbar-collapse -->
