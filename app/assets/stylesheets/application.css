@@ -36,6 +36,10 @@ nav a:hover {
 	font-size: 2em;
 }
 
+.nav li {
+	font-size: 1.1em;
+}
+
 #page-wrap {
 	width: 100%;
 	margin: 0 auto;
