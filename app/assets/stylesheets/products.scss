@@ -1,55 +1,61 @@
-// Place all the styles related to the products controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
-
-#listprod {
-	text-align: center;
-	color: #333333;
-	font-weight: 700;
-	text-shadow: 2px 2px #99e699;
-
-}
- #productindex {
-	 display: flex;
-	 flex-direction: column;
-	 align-content: center;
- }
+// // Place all the styles related to the products controller here.
+// // They will automatically be included in application.css.
+// // You can use Sass (SCSS) here: http://sass-lang.com/
+//
+//
+// #listprod {
+// 	text-align: center;
+// 	color: #333333;
+// 	font-weight: 700;
+// 	text-shadow: 2px 2px #99e699;
+//
+// }
+//  #productindex {
+// 	 display: flex;
+// 	 flex-direction: column;
+// 	 align-content: center;
+//  }
+//
+// #new-product {
+// 	text-align: center;
+// }
+//
+// .prodlist h1, p{
+// 	color: #333333;
+// 	text-align: center;
+// }
+//
+// #editproduct {
+// 	display: flex;
+// 	flex-direction: column;
+// 	align-items: center;
+// 	align-content: space-around;
+// }
+//
+// #edprod {
+// 	text-align: center;
+// }
+//
+// #pic-ind {
+// 	border: 3px solid green;
+// }
+//
+// #prodshow {
+// 	display: flex;
+// 	flex-direction: column;
+// 	align-items: stretch;
+// }
+//
+// .prodlist {
+// 	color: #333333;
+// 	height: 100%;
+// 	width: 100%;
+// 	margin: 0 auto;
+// 	padding: 5em 0 5em 5em;
+// }
 
 #new-product {
-	text-align: center;
-}
-
-.prodlist h1, p{
-	color: #333333;
-	text-align: center;
-}
-
-#editproduct {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	align-content: space-around;
-}
-
-#edprod {
-	text-align: center;
-}
-
-#pic-ind {
-	border: 3px solid green;
-}
-
-#prodshow {
-	display: flex;
-	flex-direction: column;
-	align-items: stretch;
-}
-
-.prodlist {
-	color: #333333;
-	height: 100%;
-	width: 100%;
-	margin: 0 auto;
-	padding: 5em 0 5em 5em;
+  
+  height: 100%;
+  margin: 0 15%;
 }
