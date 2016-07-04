@@ -12,33 +12,25 @@
 </head>
 <body>
   <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-brand navbar-header">
-      <button type="button" id="navigate" class="btn-navbar pull-right navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
+  <div class="container-fluid">
+    <div class="navbar navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <%= link_to "Bikes 4 U", static_pages_landing_page_path(:active => "static_pages_landing_page") %>
-      </div>
-
-      <!--Collect the nav links, forms, and other content for toggling  -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
+      <li class="navbar-brand"> <%= link_to "Bikes 4 U", static_pages_landing_page_path(:active => "static_pages_landing_page_path") %></li>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
           <li><%= link_to "About",  static_pages_about_path(@about) %></li>
           <li><%= link_to "Products", products_path %></li>
           <li><%= link_to "Order", orders_path(@orders) %></li>
           <li><%= link_to "Contact", static_pages_contact_path(@contact) %></li>
-          <li class="dropdown">
-          <li><%= link_to "Members", users_path(@users) %> </li>
-          <li><%= link_to "Sign Up", new_user_path(@users_sign_up) %> </li>
-          <li role="separator" class="divider"></li>
-          <li role="separator" class="divider"></li>
-        </ul>
-        <ul class="nav pull-right">
-          <li>
+<li><%= link_to "Members", users_path(@users) %> </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
             <% if user_signed_in? %>
               <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
             <% else %>
@@ -53,9 +45,9 @@
           <%= submit_tag("Submit", class: "btn btn-primary") %>
         <% end %>
         </div>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
+    </div>
+  </div>
+</nav>
   <% if notice %>
     <p class="notice"><%= notice %></p>
   <% end %>
