@@ -33,6 +33,7 @@ nav a:hover {
 
 .navbar-brand  {
 	list-style-type: none;
+	font-size: 2em;
 }
 
 #page-wrap {
