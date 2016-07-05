@@ -35,9 +35,8 @@
     <%= f.number_field :price, :value => (number_with_precision(f.object.price, :precision => 2) || 0) %>
   </div>
 </div>
-    <div class="actions">
-    <%= f.submit %>
-  </div>
-</div>
-</div>
+    <%= button_tag(type: 'submit', class: "btn btn-primary") do %>
+    <i class="icon-ok icon-white"></i> Create Product
+    <% end %>
+
 <% end %>
