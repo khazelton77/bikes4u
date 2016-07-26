@@ -1,0 +1,25 @@
+/* line 3, /Users/kerihazelton/bikes4u/app/assets/stylesheets/products.scss */
+#stripebutton {
+  padding-top: 1em;
+}
+
+/* line 7, /Users/kerihazelton/bikes4u/app/assets/stylesheets/products.scss */
+#rating {
+  padding-top: 1.5em;
+}
+
+/* line 11, /Users/kerihazelton/bikes4u/app/assets/stylesheets/products.scss */
+.newprodbutton {
+  margin-left: 2em;
+}
+
+/* line 17, /Users/kerihazelton/bikes4u/app/assets/stylesheets/products.scss */
+#prodlist {
+  padding-left: 2.5em;
+}
+
+/* line 21, /Users/kerihazelton/bikes4u/app/assets/stylesheets/products.scss */
+#new-product {
+  height: 100%;
+  margin: 0 15%;
+}

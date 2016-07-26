@@ -1,0 +1,82 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+
+
+body {
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 400;
+	background-color: #ccc;
+}
+
+nav {
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 400;
+	color: black;
+	padding: 2em;
+}
+nav a:hover {
+	text-decoration: none;
+}
+
+.navbar-brand  {
+	list-style-type: none;
+	font-size: 2em;
+}
+
+.nav li {
+	font-size: 1.1em;
+}
+
+#page-wrap {
+	width: 100%;
+	margin: 0 auto;
+}
+
+#navsearch {
+	float: right;
+	padding-top: 10px;
+	color: grey;
+
+}
+
+#loginhead {
+	text-align: center;
+}
+
+#loginform {
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	width: 10%;
+
+}
+#orderhead {
+	text-align: center;
+	padding-bottom: 1em;
+}
+.orders {
+	margin-left: 4em;
+	padding: 3em;
+}
+
+#signpass {
+	text-align: center;
+}
+
+footer {
+	padding: 2em;
+}

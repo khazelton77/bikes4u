@@ -10,7 +10,7 @@ app.factory('models', ['$resource', function($resource){
   return x;
 }]);
 
-$(document).on('ready page:load', function(){
+$(document).on('turbolinks:load', function(){
   angular.bootstrap(document.body, ['shop'])
 });
 

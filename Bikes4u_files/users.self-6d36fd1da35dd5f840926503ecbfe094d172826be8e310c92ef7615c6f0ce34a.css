@@ -1,0 +1,16 @@
+/* line 21, /Users/kerihazelton/bikes4u/app/assets/stylesheets/users.scss */
+#new-user {
+  text-align: center;
+  margin: 0 25%;
+}
+
+/* line 27, /Users/kerihazelton/bikes4u/app/assets/stylesheets/users.scss */
+#newuserhead {
+  padding-bottom: 1em;
+  text-align: center;
+}
+
+/* line 32, /Users/kerihazelton/bikes4u/app/assets/stylesheets/users.scss */
+.buttonholder {
+  text-align: center;
+}
